@@ -570,6 +570,7 @@ var jsPDF = (function (global) {
         out('2 0 obj');
         out('<<');
         putResourceDictionary();
+        events.publish('additionalResources');
         out('>>');
         out('endobj');
         events.publish('postPutResources');
